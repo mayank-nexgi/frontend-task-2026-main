@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nook Studio | Furniture for small spaces</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Nook<span>Studio</span></a>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#features">Why Nook</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">New collection</p>
+          <h1>Furniture that fits the way you actually live</h1>
+          <p class="hero-sub">Compact, modular pieces designed for apartments, studios and every awkward corner in between.</p>
+          <a href="#products" class="btn btn-primary">Shop the collection</a>
+        </div>
+        <div class="hero-image" role="img" aria-label="Living room with a compact modular sofa"></div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2>Shop the collection</h2>
+          <div class="filters">
+            <button class="filter-btn is-active" data-category="all">All</button>
+            <button class="filter-btn" data-category="seating">Seating</button>
+            <button class="filter-btn" data-category="storage">Storage</button>
+            <button class="filter-btn" data-category="lighting">Lighting</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+
+        <div class="load-more-wrap">
+          <button class="btn btn-secondary" id="load-more">Load more</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2>Why people pick Nook</h2>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="feature-icon">01</div>
+            <h3>Built for small spaces</h3>
+            <p>Every piece is designed around real apartment floor plans, not showroom floors.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">02</div>
+            <h3>Modular by default</h3>
+            <p>Start small and add pieces as you move, grow or change your mind.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">03</div>
+            <h3>Free returns for 30 days</h3>
+            <p>If it doesn't fit your space, we'll pick it up at no cost.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container narrow">
+        <h2>Questions, answered</h2>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q-text">How long does delivery take?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most orders arrive in 5 to 7 working days. Larger items like sofas can take up to 14 days.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q-text">Do I need to assemble anything?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most pieces arrive fully assembled. Shelving and beds come with tool-free fittings and take under 20 minutes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q-text">Can I return an item?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. You have 30 days to return any item in its original condition. We arrange the pickup.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span class="faq-q-text">Do you deliver outside major cities?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>We currently deliver to over 400 cities. Enter your pincode at checkout to check.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container narrow">
+        <h2>Get 10% off your first order</h2>
+        <p>Join our newsletter for new drops, small-space ideas and members-only offers. No spam.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input type="email" name="email" id="email" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-primary" id="subscribe-btn">Subscribe</button>
+        </form>
+        <p class="form-message" id="form-message" role="status"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Nook Studio. A fictional brand made for a frontend task.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
